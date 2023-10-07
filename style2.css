@@ -502,14 +502,14 @@ left: 300px;
 }
 #Projects:hover .project1{
 animation: project1 5s ease  1s 2 forwards ;}
-#Projects.target .project1{
-    animation: project1 5s ease  1s 2 forwards ;}
 #Projects:hover .project2 ,#Projects.target .project2{
  animation: project2 5s  ease 1s 2 forwards; 
 }
 @media(max-width:1200px){
-    .project1,.project2{
+    #Projects:hover  .project1 , #Projects:hover .project2{
+        
         animation-duration: 0s;
+        animation-fill-mode: backwards;
     }
     .project-rows{
        
@@ -526,13 +526,15 @@ animation: project1 5s ease  1s 2 forwards ;}
         align-items: center;
       
     }
+  
     .project2{
         top:0px;
         left: 0;
         height: auto;
         width: 70%;
     }
-    .project1{
+   
+     .project1{
         top: 0; 
         height: auto;
         width: 70%;
