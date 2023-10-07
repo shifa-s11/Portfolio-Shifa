@@ -26,7 +26,8 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index:1;
-    overflow-x: hidden;
+    
+    
 }
 .logo{
     font-size:2rem;
